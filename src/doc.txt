@@ -1,0 +1,41 @@
+1. What types of tests you should write
+
+    1. Unit Tests
+        Small, fast, isolated
+        Examples:
+            format functions
+            validations
+            pure JS logic
+            small components
+    
+    2. Component Tests
+        Use React Native Testing Library
+        Examples:
+            Button press triggers callback
+            Form shows errors
+            Header renders correctly
+
+    3. Integration Tests
+        Test real flow without backend
+        Examples:
+            Login screen flows
+            API hook + component render
+            Navigation interactions
+    
+    4. Optional: E2E Tests (Detox)
+        Full device simulation
+        Only needed for big enterprise apps.
+
+
+2. How many tests should a scalable app have?
+
+| Layer       | Minimum Tests |
+| ----------- | ------------- |
+| Utils       | 10–20         |
+| Hooks       | 10–30         |
+| API         | 20–50         |
+| Components  | 30–80         |
+| Screens     | 10–30         |
+| E2E (Detox) | 3–10          |
+
+Total: 80–150 test files for a medium-scale project.
